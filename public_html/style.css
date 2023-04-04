@@ -77,7 +77,7 @@ body {
 }
 
 #createUser {
-  margin-top: 10px2;
+  margin-top: 10px;
   max-width: 100px;
   min-width: 100px;
 }
@@ -127,8 +127,8 @@ body {
 }
 
 .itemsView {
-  min-width: 50%;
-  max-width: 50%;
+  min-width: 49%;
+  max-width: 49%;
   border: 3px solid black;
   min-height: 90vh;
   max-height: 90vh;
