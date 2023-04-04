@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Ostaa</h1>
+    </div>
+    <div class="loginArea">
+      <h1>Login</h1>
+      <div class="usernameLoginRow">
+        <label for="usernameLogin">Username:</label>
+        <input
+          class="usernameLogin"
+          type="text"
+          id="usernameLogin"
+          name="usernameLogin"
+        />
+      </div>
+      <div class="passwordLoginRow">
+        <label for="passwordLogin">Password:</label>
+        <input
+          class="passwordLogin"
+          type="password"
+          id="passwordLogin"
+          name="passwordLogin"
+        />
+      </div>
+      <input
+        type="button"
+        id="loginUser"
+        onclick="loginUser();"
+        value="Log in"
+      />
+      <p id="alertLogin"></p>
+    </div>
+    <div class="createArea">
+      <h1>Create Account</h1>
+      <div class="usernameCreateRow">
+        <label for="usernameCreate">Username:</label>
+        <input
+          class="usernameCreate"
+          type="text"
+          id="usernameCreate"
+          name="usernameCreate"
+        />
+      </div>
+      <div class="passwordCreateRow">
+        <label for="passwordCreate">Password:</label>
+        <input
+          class="passwordCreate"
+          type="password"
+          id="passwordCreate"
+          name="passwordCreate"
+        />
+      </div>
+      <input
+        type="button"
+        id="createUser"
+        onclick="addUser();"
+        value="Create"
+      />
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

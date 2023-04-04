@@ -1,0 +1,99 @@
+/* Jose Bernardo Montano
+  CSC337 - PA9: Ostaa
+  This will be the simple styling for index.html */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.add-user {
+  margin-top: 40px;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.add-user h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.add-user label {
+  font-size: 20px;
+}
+
+.usernameRow {
+  display: flex;
+  flex-direction: row;
+}
+
+.usernameRow input {
+  max-width: 300px;
+  min-width: 100px;
+  margin-bottom: 20px;
+}
+
+.passwordRow {
+  display: flex;
+  flex-direction: row;
+}
+
+.passwordRow input {
+  max-width: 300px;
+  min-width: 100px;
+  margin-bottom: 20px;
+}
+
+#addUser {
+  max-width: 100px;
+  min-width: 100px;
+}
+
+.add-item {
+  margin-top: 40px;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.add-item h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.add-item label {
+  font-size: 20px;
+}
+
+.titleRow {
+  display: flex;
+  flex-direction: row;
+}
+
+.titleRow input {
+  max-width: 300px;
+  min-width: 100px;
+  margin-bottom: 20px;
+}
+
+.descRow input {
+  margin-bottom: 20px;
+}
+
+.imageRow input {
+  margin-bottom: 20px;
+}
+
+.priceRow input {
+  margin-bottom: 20px;
+}
+
+.statusRow input {
+  margin-bottom: 20px;
+}
+
+#addItem {
+  max-width: 100px;
+  min-width: 100px;
+}

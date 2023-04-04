@@ -1,0 +1,82 @@
+<!-- Jose Bernardo Montano
+    CSC337 - PA9: Ostaa
+    This is the html for the very basic site that it will be helpful
+    to make post request in an easy way for testing -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ostaa</title>
+  </head>
+  <body>
+    <div class="add-user">
+      <h1>Add User</h1>
+      <div class="usernameRow">
+        <label for="usernameInput">Username:</label>
+        <input
+          class="usernameInput"
+          type="text"
+          id="usernameInput"
+          name="usernameInput"
+        >
+      </div>
+      <div class="passwordRow">
+        <label for="passwordInput">Password:</label>
+        <input
+          class="passwordInput"
+          type="text"
+          id="passwordInput"
+          name="passwordInput"
+        >
+      </div>
+      <input type="button" id="addUser" onclick="addUser();" value="Add User">
+    </div>
+    <div class="add-item">
+      <h1>Add Item</h1>
+      <div class="titleRow">
+        <label for="titleInput">Title:</label>
+        <input
+          class="titleInput"
+          type="text"
+          id="titleInput"
+          name="titleInput"
+        >
+      </div>
+      <div class="descRow">
+        <label for="descInput">Desc:</label>
+        <input class="descInput" type="text" id="descInput" name="descInput">
+      </div>
+      <div class="imageRow">
+        <label for="imageInput">Image:</label>
+        <input
+          class="imageInput"
+          type="text"
+          id="imageInput"
+          name="imageInput"
+        >
+      </div>
+      <div class="priceRow">
+        <label for="priceRow">Price:</label>
+        <input class="priceRow" type="text" id="priceRow" name="priceRow">
+      </div>
+      <div class="statusRow">
+        <label for="statusRow">Status:</label>
+        <input class="statusRow" type="text" id="statusRow" name="statusRow">
+      </div>
+      <div class="usernameRow">
+        <label for="usernameRow">Username:</label>
+        <input
+          class="usernameRow"
+          type="text"
+          id="usernameRow"
+          name="usernameRow"
+        >
+      </div>
+      <input type="button" id="addItem" onclick="addItem();" value="Add Item">
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

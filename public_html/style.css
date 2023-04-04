@@ -1,0 +1,218 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #c8e1f9;
+}
+
+.header {
+  margin-top: 30px;
+  margin-left: 30px;
+  color: #003296;
+  font-size: 20px;
+}
+
+.loginArea {
+  margin-top: 30px;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.loginArea h1 {
+  color: #003296;
+  margin-bottom: 20px;
+}
+
+.usernameLoginRow {
+  display: flex;
+  display: row;
+  font-size: 20px;
+}
+
+.passwordLoginRow {
+  display: flex;
+  display: row;
+  font-size: 20px;
+}
+
+#loginUser {
+  margin-top: 10px;
+  max-width: 100px;
+  min-width: 100px;
+}
+
+#alertLogin {
+  margin-top: 10px;
+  font-size: 20px;
+  color: red;
+  margin-bottom: 10px;
+}
+
+.createArea {
+  margin-top: 30px;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.createArea h1 {
+  color: #003296;
+  margin-bottom: 20px;
+}
+
+.usernameCreateRow {
+  display: flex;
+  display: row;
+  font-size: 20px;
+}
+
+.passwordCreateRow {
+  margin-top: 20px;
+  display: flex;
+  display: row;
+  font-size: 20px;
+}
+
+#createUser {
+  margin-top: 10px2;
+  max-width: 100px;
+  min-width: 100px;
+}
+
+.usernameLoginRow {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.homeHeader {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  min-width: 100%;
+  min-height: 10vh;
+}
+
+.homeHeader h1 {
+  color: #003296;
+  margin-top: 30px;
+  margin-left: 30px;
+  font-size: 40px;
+}
+
+.homeBody {
+  display: flex;
+  flex-direction: row;
+  background-color: #e0f9c9;
+  max-width: 100%;
+  min-width: 100%;
+  min-height: 90vh;
+  border: 3px solid black;
+}
+
+#greeting {
+  font-size: 25px;
+  margin-left: 20px;
+  margin-top: 40px;
+}
+
+.itemsInput {
+  min-width: 50%;
+  max-width: 50%;
+  border: 3px solid black;
+  min-height: 90vh;
+  max-height: 90vh;
+}
+
+.itemsView {
+  min-width: 50%;
+  max-width: 50%;
+  border: 3px solid black;
+  min-height: 90vh;
+  max-height: 90vh;
+}
+
+.inputArea {
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+#searchListingInput {
+  width: 200px;
+  height: 25px;
+}
+
+#searchListing {
+  height: 25px;
+}
+
+#viewListings {
+  margin-top: 30px;
+  height: 25px;
+  margin-top: 30px;
+}
+
+#viewPurchases {
+  margin-top: 30px;
+  height: 25px;
+  margin-top: 30px;
+}
+
+#createListing {
+  margin-top: 30px;
+  height: 25px;
+  margin-top: 30px;
+}
+
+.item {
+  margin: 20px;
+  border: 3px solid black;
+}
+
+.postBody {
+  margin-left: 30px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.postBody h2 {
+  font-size: 30px;
+}
+
+.postBody label {
+  font-size: 25px;
+}
+
+.postBody input {
+  width: 200px;
+  height: 20px;
+}
+
+#addItem {
+  width: 100px;
+}
+
+.titleRow {
+  margin-top: 20px;
+}
+
+.descRow {
+  margin-top: 20px;
+}
+
+.imageRow {
+  margin-top: 20px;
+}
+
+.priceRow {
+  margin-top: 15px;
+}
+
+.statusRow {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}

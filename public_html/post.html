@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Post</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Ostaa</h1>
+    </div>
+    <div class="postBody">
+      <h2>Add a Post</h2>
+      <div class="add-item">
+        <div class="titleRow">
+          <label for="titleInput">Title:</label>
+          <input
+            class="titleInput"
+            type="text"
+            id="titleInput"
+            name="titleInput"
+          />
+        </div>
+        <div class="descRow">
+          <label for="descInput">Desc:</label>
+          <input
+            class="descInput"
+            type="text"
+            id="descInput"
+            name="descInput"
+          />
+        </div>
+        <div class="imageRow">
+          <label for="imageInput">Image:</label>
+          <input
+            class="imageInput"
+            type="text"
+            id="imageInput"
+            name="imageInput"
+          />
+        </div>
+        <div class="priceRow">
+          <label for="priceRow">Price:</label>
+          <input class="priceRow" type="text" id="priceRow" name="priceRow" />
+        </div>
+        <div class="statusRow">
+          <label for="statusRow">Status:</label>
+          <input
+            class="statusRow"
+            type="text"
+            id="statusRow"
+            name="statusRow"
+          />
+        </div>
+        <!-- <input
+          type="file"
+          id="avatar"
+          name="avatar"
+          accept="image/png, image/jpeg"
+        /> -->
+        <input
+          type="button"
+          id="addItem"
+          onclick="addItem();"
+          value="Add Item"
+        />
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

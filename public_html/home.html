@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Home</title>
+  </head>
+  <body onload="welcomeMessage()">
+    <div class="homeHeader">
+      <h1>Ostaa</h1>
+    </div>
+    <div class="homeBody">
+      <div class="itemsInput">
+        <p id="greeting"></p>
+        <br />
+        <div class="inputArea">
+          <div class="searchListings">
+            <div class="searchlistingRow">
+              <input
+                class="searchListingInput"
+                type="text"
+                id="searchListingInput"
+                name="searchListingInput"
+              />
+              <input
+                type="button"
+                id="searchListing"
+                onclick="searchListings();"
+                value="Search Listing"
+              />
+            </div>
+            <input
+              type="button"
+              id="viewListings"
+              onclick="viewListings();"
+              value="View your Listings"
+            />
+            <br />
+            <input
+              type="button"
+              id="viewPurchases"
+              onclick="viewPurchases();"
+              value="View your Purchases"
+            />
+            <br />
+            <input
+              type="button"
+              id="createListing"
+              onclick="createListing();"
+              value="Create a Listing"
+            />
+            <br />
+          </div>
+        </div>
+      </div>
+      <div class="itemsView">
+        <div class="displayArea"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
