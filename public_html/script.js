@@ -1,11 +1,11 @@
 "use strict";
-
 // Jose Bernardo Montano
-// CSC337 - PA9: Ostaa
+// CSC337 - PA10: Ostaa
 // Script.js is the client-side js logic that will get the input from the html elements
 // and will make the calls to the server-side, where it will talk to the server and
 // retrieve or saved the data from the user
 
+// getCookie function will retrieve the cookie that is needed and return the value of it
 const getCookie = (name) => {
   const cookies = document.cookie.split("; ");
   for (let i = 0; i < cookies.length; i++) {
@@ -18,6 +18,8 @@ const getCookie = (name) => {
   return null;
 };
 
+// welcomeMessage will generate the custon message based on the cookie value
+// for the username
 const welcomeMessage = () => {
   console.log("welcomeMessage is being called...");
   const user = getCookie("username");
@@ -28,6 +30,8 @@ const welcomeMessage = () => {
   }
 };
 
+// viewPurchases will generate html content based on the purchases list
+// of the user
 const viewPurchases = () => {
   const username = getCookie("username");
   if (!username) {
@@ -61,6 +65,8 @@ const viewPurchases = () => {
     .catch((err) => console.log(err));
 };
 
+// viewListings will generate html content based on the listings list
+// of the user
 const viewListings = () => {
   const username = getCookie("username");
   if (!username) {
@@ -101,6 +107,9 @@ const viewListings = () => {
     .catch((err) => console.log(err));
 };
 
+// buyItem will call an endpoint that will take care of updating
+// the status of the item from SALE to SOLD and will reflect the
+// changes in the html to reflect the correct
 const buyItem = (title) => {
   console.log("Buy Item function is being called...");
   const username = getCookie("username");
@@ -123,6 +132,9 @@ const buyItem = (title) => {
     .catch((err) => console.log(err));
 };
 
+// searchListings will get the cookie to see if its valid
+// and will show the listings that are for sale for that
+// particular user, and modify the html to append the items
 const searchListings = () => {
   const username = getCookie("username");
   if (!username) {
@@ -175,6 +187,8 @@ const searchListings = () => {
     .catch((err) => console.log(err));
 };
 
+// createListing will redirect users to post.html if there is a cookie
+// with data that they are logged in
 const createListing = () => {
   const username = getCookie("username");
   if (!username) {
@@ -183,6 +197,8 @@ const createListing = () => {
   window.location.href = "post.html";
 };
 
+// loginUser will retrieve the username and password from the html
+// and will redirect to home.html if there is a cookie created
 const loginUser = async () => {
   const username = document.getElementById("usernameLogin").value;
   const password = document.getElementById("passwordLogin").value;
@@ -205,8 +221,6 @@ const loginUser = async () => {
   }
 };
 
-const createUser = () => {};
-
 // sendUserData will make a call to the server-side, server.js, in order
 // to post the user data on the mongoDB collection if successful
 const sendUserData = (data) => {
@@ -220,8 +234,10 @@ const sendUserData = (data) => {
     .then((response) => {
       if (response.ok) {
         console.log("User saved to DB!");
+        alert("User created!");
       } else {
         console.log("Error at saving user to DB!");
+        alert("User already exists!");
       }
     })
     .catch((error) => console.log("Error at saving user to DB!"));
@@ -256,7 +272,7 @@ const addUser = () => {
   const password = document.getElementById("passwordCreate").value;
   const data = createUserObjectForJSON(username, password);
   sendUserData(data);
-  alert("User created!");
+  // alert("User created!");
 };
 
 // addItem function will retrieve the texts from the items fields

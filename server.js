@@ -50,6 +50,8 @@ app.use(express.static("public_html"));
 
 // POST ROUTING
 
+// This route will take care to see if the user exists and
+// will create the cookie necessary to logged in the user
 app.post("/checkLogin", async (req, res) => {
   const username = req.body.username;
   const password = req.body.password;
@@ -106,13 +108,17 @@ app.post("/add/item/:USERNAME", async (req, res) => {
 });
 
 // Post request to add user to the DB
-app.post("/add/user/", (req, res) => {
+app.post("/add/user/", async (req, res) => {
   const user = new User({
     username: req.body.username,
     password: req.body.password,
     listings: [],
     purchases: [],
   });
+  const existingUser = await User.findOne({ username: req.body.username });
+  if (existingUser) {
+    return res.status(409).json({ message: "User exists already!" });
+  }
   // Promise
   user
     .save()
@@ -126,6 +132,9 @@ app.post("/add/user/", (req, res) => {
     });
 });
 
+// This route will make possible for the user to buy an item
+// and it will change the status of the item and will move it
+// from listing to purchases
 app.post("/buyItem/:item/:username", async (req, res) => {
   console.log("Testing");
   try {
